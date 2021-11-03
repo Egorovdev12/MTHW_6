@@ -1,6 +1,6 @@
 package HW;
 
 @FunctionalInterface
-public interface MyHighFunction {
+public interface StringRecognizer {
     String restoreStr(String source);
 }

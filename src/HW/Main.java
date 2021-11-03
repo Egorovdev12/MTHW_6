@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        MyHighFunction mhf = (a) -> {
+        StringRecognizer mhf = (a) -> {
             String decoded = a.strip().toLowerCase(Locale.getDefault());
             return decoded;
         };
@@ -22,7 +22,7 @@ public class Main {
     }
 
 
-    public static List<String> createDictionary(String source, MyHighFunction function) {
+    public static List<String> createDictionary(String source, StringRecognizer function) {
           return Arrays.asList(Arrays.asList(source).stream()
                 .map(function::restoreStr)
                 .toList()
